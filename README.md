@@ -1,7 +1,8 @@
 # Reddit Comment Word Cloud Generator
 
 prawword.py scrapes all of the comments from a reddit thread using **PRAW**, then creates a word cloud using the **WordCloud** library. </br>
-
+### PRAW
+Before doing anything else, you have to make a reddit bot. There's tutorials online and it's pretty easy. The bot you create on reddit will give you some information (secret number, user agent, etc), and you must input this data into the python file. </br> 
 The word cloud takes on the dimensions of whatever mask you choose to overlay it with, so I suggest using a larger image as a mask. Otherwise, the wordcloud might come out looking very blurry. </br>
 
 The way the mask works is by outlining the image, and only putting words where pixels exist in the image. Thus if there is any transparent space, the empty space will become the background for the word cloud. For this reason, I suggest using PNG files since you have to have transparent space in your image for the mask to have any effect at all. </br> 
